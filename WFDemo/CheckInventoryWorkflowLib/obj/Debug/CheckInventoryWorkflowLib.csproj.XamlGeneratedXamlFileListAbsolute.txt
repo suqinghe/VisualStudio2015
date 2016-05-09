@@ -1,0 +1,2 @@
+obj\Debug\CheckInventory.g.xaml
+obj\Debug\CheckInventoryWorkflowLib_CheckInventory_BeforeInitializeComponentHelper.txt

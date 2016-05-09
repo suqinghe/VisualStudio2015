@@ -1,0 +1,4 @@
+obj\x86\Debug\_EnumerateMachineDataWF.g.cs
+obj\x86\Debug\MachineInfoWF.g.cs
+obj\x86\Debug\EnumerateMachineDataWF_Workflow1_BeforeInitializeComponentHelper.cs
+G:\visual studio 2015\Projects\WFDemo\EnumerateMachineDataWF\obj\x86\Debug\EnumerateMachineDataWF_Workflow1_CompiledExpressionRoot.cs

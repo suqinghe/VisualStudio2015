@@ -1,0 +1,15 @@
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\bin\Debug\UserDataWFApp.exe.config
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\bin\Debug\UserDataWFApp.exe
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\bin\Debug\UserDataWFApp.pdb
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\Workflow1.g.xaml
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp_Workflow1_BeforeInitializeComponentHelper.txt
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\_UserDataWFApp.g.cs
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\Workflow1.g.cs
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp_Workflow1_BeforeInitializeComponentHelper.cs
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp.csproj.XamlGeneratedCodeFileListAbsolute.txt
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp.csproj.XamlGeneratedXamlFileListAbsolute.txt
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp.pdb
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp.exe
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp_Workflow1_CompiledExpressionRoot.cs
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp.dll

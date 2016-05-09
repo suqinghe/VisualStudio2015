@@ -1,0 +1,2 @@
+CheckInventory.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

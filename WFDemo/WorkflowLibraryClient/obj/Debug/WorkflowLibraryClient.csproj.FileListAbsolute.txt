@@ -1,0 +1,10 @@
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\WorkflowLibraryClient.exe.config
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\WorkflowLibraryClient.exe
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\WorkflowLibraryClient.pdb
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\AutoLotDAL.dll
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\CheckInventoryWorkflowLib.dll
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\AutoLotDAL.pdb
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\bin\Debug\CheckInventoryWorkflowLib.pdb
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\obj\Debug\WorkflowLibraryClient.csprojResolveAssemblyReference.cache
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\obj\Debug\WorkflowLibraryClient.exe
+G:\visual studio 2015\Projects\WFDemo\WorkflowLibraryClient\obj\Debug\WorkflowLibraryClient.pdb

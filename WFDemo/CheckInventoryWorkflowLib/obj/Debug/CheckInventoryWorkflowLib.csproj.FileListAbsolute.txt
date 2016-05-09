@@ -1,0 +1,16 @@
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\bin\Debug\CheckInventoryWorkflowLib.dll
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\bin\Debug\CheckInventoryWorkflowLib.pdb
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\bin\Debug\AutoLotDAL.dll
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\bin\Debug\AutoLotDAL.pdb
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib.csprojResolveAssemblyReference.cache
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventory.g.xaml
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib_CheckInventory_BeforeInitializeComponentHelper.txt
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\_CheckInventoryWorkflowLib.g.cs
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventory.g.cs
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib_CheckInventory_BeforeInitializeComponentHelper.cs
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib.csproj.XamlGeneratedCodeFileListAbsolute.txt
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib.csproj.XamlGeneratedXamlFileListAbsolute.txt
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib.dll
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib.pdb
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib_CheckInventory_CompiledExpressionRoot.cs

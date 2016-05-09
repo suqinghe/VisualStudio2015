@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<b:ExecuteActivity xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:b="clr-namespace:BFWProjectAuditLib;assembly=BFWProjectAuditLib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <b:ExecuteActivity.Implementation>
+    <Sequence DisplayName="ExecuteProject">
+      <StateMachine InitialState="{x:Reference __ReferenceID10}">
+        <State x:Name="__ReferenceID10" DisplayName="新建">
+          <State.Transitions>
+            <Transition DisplayName="提交审核">
+              <Transition.To>
+                <State x:Name="__ReferenceID1" DisplayName="待审核">
+                  <State.Transitions>
+                    <Transition DisplayName="审核通过">
+                      <Transition.To>
+                        <State x:Name="__ReferenceID2" DisplayName="审核通过">
+                          <State.Transitions>
+                            <Transition DisplayName="招标发布">
+                              <Transition.To>
+                                <State x:Name="__ReferenceID3" DisplayName="招标待审核">
+                                  <State.Transitions>
+                                    <Transition DisplayName="招标审核不通过">
+                                      <Transition.To>
+                                        <State x:Name="__ReferenceID0" DisplayName="结束" IsFinal="True" />
+                                      </Transition.To>
+                                    </Transition>
+                                    <Transition DisplayName="招标审核通过">
+                                      <Transition.To>
+                                        <State x:Name="__ReferenceID4" DisplayName="招标审核通过">
+                                          <State.Transitions>
+                                            <Transition DisplayName="开始招标">
+                                              <Transition.To>
+                                                <State x:Name="__ReferenceID5" DisplayName="招标中">
+                                                  <State.Transitions>
+                                                    <Transition DisplayName="招标结束">
+                                                      <Transition.To>
+                                                        <State x:Name="__ReferenceID6" DisplayName="评标中">
+                                                          <State.Transitions>
+                                                            <Transition DisplayName="评标选中">
+                                                              <Transition.To>
+                                                                <State x:Name="__ReferenceID7" DisplayName="已定标">
+                                                                  <State.Transitions>
+                                                                    <Transition DisplayName="合同签约">
+                                                                      <Transition.To>
+                                                                        <State x:Name="__ReferenceID9" DisplayName="已签约">
+                                                                          <State.Transitions>
+                                                                            <Transition DisplayName="T1" To="{x:Reference __ReferenceID0}" />
+                                                                          </State.Transitions>
+                                                                        </State>
+                                                                      </Transition.To>
+                                                                    </Transition>
+                                                                  </State.Transitions>
+                                                                </State>
+                                                              </Transition.To>
+                                                            </Transition>
+                                                            <Transition DisplayName="评标失败">
+                                                              <Transition.To>
+                                                                <State x:Name="__ReferenceID8" DisplayName="未中标">
+                                                                  <State.Transitions>
+                                                                    <Transition DisplayName="T2" To="{x:Reference __ReferenceID0}" />
+                                                                  </State.Transitions>
+                                                                </State>
+                                                              </Transition.To>
+                                                            </Transition>
+                                                          </State.Transitions>
+                                                        </State>
+                                                      </Transition.To>
+                                                    </Transition>
+                                                  </State.Transitions>
+                                                </State>
+                                              </Transition.To>
+                                            </Transition>
+                                          </State.Transitions>
+                                        </State>
+                                      </Transition.To>
+                                    </Transition>
+                                  </State.Transitions>
+                                </State>
+                              </Transition.To>
+                            </Transition>
+                          </State.Transitions>
+                        </State>
+                      </Transition.To>
+                    </Transition>
+                    <Transition DisplayName="审核不通过" To="{x:Reference __ReferenceID0}" />
+                  </State.Transitions>
+                </State>
+              </Transition.To>
+            </Transition>
+          </State.Transitions>
+        </State>
+        <x:Reference>__ReferenceID1</x:Reference>
+        <x:Reference>__ReferenceID2</x:Reference>
+        <x:Reference>__ReferenceID0</x:Reference>
+        <x:Reference>__ReferenceID3</x:Reference>
+        <x:Reference>__ReferenceID4</x:Reference>
+        <x:Reference>__ReferenceID5</x:Reference>
+        <x:Reference>__ReferenceID6</x:Reference>
+        <x:Reference>__ReferenceID7</x:Reference>
+        <x:Reference>__ReferenceID8</x:Reference>
+        <x:Reference>__ReferenceID9</x:Reference>
+      </StateMachine>
+      <sads:DebugSymbol.Symbol>d01HOlx2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV0ZEZW1vXEJGV1Byb2plY3RBdWRpdExpYlxFeGVjdXRlQWN0aXZpdHkueGFtbA0eA4ABDgIBAR8FfhQCAQIgB3MPAgEgJA9vFwIBHSgXah8CARowJzCSAQIBGCwfZicCARU1J2IvAgESOS9eNwIBDz03Wj8CAQxBP01HAgEJUj9WRwIBBkVHSU8CAQM=</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </b:ExecuteActivity.Implementation>
+</b:ExecuteActivity>

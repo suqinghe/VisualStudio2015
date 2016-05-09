@@ -1,0 +1,4 @@
+obj\x86\Debug\_UserDataWFApp.g.cs
+obj\x86\Debug\Workflow1.g.cs
+obj\x86\Debug\UserDataWFApp_Workflow1_BeforeInitializeComponentHelper.cs
+G:\visual studio 2015\Projects\WFDemo\UserDataWFApp\obj\x86\Debug\UserDataWFApp_Workflow1_CompiledExpressionRoot.cs

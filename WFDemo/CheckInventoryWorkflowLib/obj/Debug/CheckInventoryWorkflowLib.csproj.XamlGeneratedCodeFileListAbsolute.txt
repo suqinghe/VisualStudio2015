@@ -1,0 +1,4 @@
+obj\Debug\_CheckInventoryWorkflowLib.g.cs
+obj\Debug\CheckInventory.g.cs
+obj\Debug\CheckInventoryWorkflowLib_CheckInventory_BeforeInitializeComponentHelper.cs
+G:\visual studio 2015\Projects\WFDemo\CheckInventoryWorkflowLib\obj\Debug\CheckInventoryWorkflowLib_CheckInventory_CompiledExpressionRoot.cs

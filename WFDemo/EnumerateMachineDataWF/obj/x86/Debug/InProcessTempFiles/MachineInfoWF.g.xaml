@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<e:Workflow1 xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:e="clr-namespace:EnumerateMachineDataWF;assembly=EnumerateMachineDataWF" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>EnumerateMachineDataWF</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <e:Workflow1.Implementation>
+    <Flowchart DisplayName="Show Machine Data Flowchart">
+      <Flowchart.Variables>
+        <Variable x:TypeArguments="x:String" Name="YesOrNo" />
+        <Variable x:TypeArguments="x:String" Name="variable1" />
+        <Variable x:TypeArguments="s:String[]" Name="DriveNames" />
+      </Flowchart.Variables>
+      <Flowchart.StartNode>
+        <FlowStep x:Name="__ReferenceID0">
+          <WriteLine DisplayName="Greet User">
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"Hello" + UserName</mca:CSharpValue>
+            </InArgument>
+          </WriteLine>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <WriteLine DisplayName="Ask User" Text="Do you want me to list all machine drives?" />
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID2">
+                  <InvokeMethod DisplayName="Get Y or N" MethodName="ReadLine" TargetType="s:Console">
+                    <InvokeMethod.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <mca:CSharpReference x:TypeArguments="x:String">YesOrNo</mca:CSharpReference>
+                      </OutArgument>
+                    </InvokeMethod.Result>
+                  </InvokeMethod>
+                  <FlowStep.Next>
+                    <FlowDecision x:Name="__ReferenceID3">
+                      <FlowDecision.Condition>
+                        <mca:CSharpValue x:TypeArguments="x:Boolean">YesOrNo.ToUpper() == "Y"</mca:CSharpValue>
+                      </FlowDecision.Condition>
+                      <FlowDecision.True>
+                        <FlowStep x:Name="__ReferenceID6">
+                          <WriteLine Text="Good,It's cool" />
+                          <FlowStep.Next>
+                            <FlowStep x:Name="__ReferenceID7">
+                              <InvokeMethod MethodName="GetLogicalDrives" TargetType="s:Environment">
+                                <InvokeMethod.Result>
+                                  <OutArgument x:TypeArguments="s:String[]">
+                                    <mca:CSharpReference x:TypeArguments="s:String[]">DriveNames</mca:CSharpReference>
+                                  </OutArgument>
+                                </InvokeMethod.Result>
+                              </InvokeMethod>
+                              <FlowStep.Next>
+                                <FlowStep x:Name="__ReferenceID8">
+                                  <ForEach x:TypeArguments="x:String" DisplayName="ForEach&lt;String&gt;">
+                                    <ForEach.Values>
+                                      <InArgument x:TypeArguments="scg:IEnumerable(x:String)">
+                                        <mca:CSharpValue x:TypeArguments="scg:IEnumerable(x:String)">DriveNames</mca:CSharpValue>
+                                      </InArgument>
+                                    </ForEach.Values>
+                                    <ActivityAction x:TypeArguments="x:String">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                      </ActivityAction.Argument>
+                                      <WriteLine>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <mca:CSharpValue x:TypeArguments="x:String">item</mca:CSharpValue>
+                                        </InArgument>
+                                      </WriteLine>
+                                    </ActivityAction>
+                                  </ForEach>
+                                  <FlowStep.Next>
+                                    <FlowStep x:Name="__ReferenceID9">
+                                      <WriteLine Text="Done!" />
+                                    </FlowStep>
+                                  </FlowStep.Next>
+                                </FlowStep>
+                              </FlowStep.Next>
+                            </FlowStep>
+                          </FlowStep.Next>
+                        </FlowStep>
+                      </FlowDecision.True>
+                      <FlowDecision.False>
+                        <FlowStep x:Name="__ReferenceID4">
+                          <WriteLine DisplayName="FalseResult" Text="Too bad,All done!" />
+                          <FlowStep.Next>
+                            <FlowStep x:Name="__ReferenceID5">
+                              <TerminateWorkflow Reason="Yes or No was false">
+                                <TerminateWorkflow.Exception>
+                                  <InArgument x:TypeArguments="s:Exception">
+                                    <mca:CSharpValue x:TypeArguments="s:Exception">new Exception("User said no");</mca:CSharpValue>
+                                  </InArgument>
+                                </TerminateWorkflow.Exception>
+                              </TerminateWorkflow>
+                            </FlowStep>
+                          </FlowStep.Next>
+                        </FlowStep>
+                      </FlowDecision.False>
+                    </FlowDecision>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
+      <sads:DebugSymbol.Symbol>d09HOlx2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV0ZEZW1vXEVudW1lcmF0ZU1hY2hpbmVEYXRhV0ZcTWFjaGluZUluZm9XRi54YW1sFywDlwEPAgEBNAk4FQIBLzsNO5EBAgEtPhFEIAIBJ0gXSG4CASJ2GXaHAQIBIHkdfzECARlMGUxqAgEXTx1VLAIBEVghaCsCAQRrJWttAgECNg02XQIBMDtiO44BAgEuQRdBZAIBKHZxdoQBAgEheW15ggECAR98I3yCAQIBGkxXTGcCARhSI1J1AgESWydbgAECAQxiJWYxAgEFa2NragIBA2QpZGsCAQY=</sads:DebugSymbol.Symbol>
+    </Flowchart>
+  </e:Workflow1.Implementation>
+</e:Workflow1>
